@@ -27,6 +27,7 @@ class Rocketship{
     this.vel.add(this.acc);
     this.vel.limit(this.maxVel);
     //only recalculate direction if velocity is greater than 0
+    //change
     if(this.vel.magnitude() > 0.0000001){
       this.dir = this.vel.theta();
     }
